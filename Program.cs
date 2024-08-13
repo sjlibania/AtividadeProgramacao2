@@ -4,35 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LISTA2EX5
+namespace LISTA2EX6
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int b;
-            int h;
-            int area;
+            double P;
+            double A;
+            double R;
 
-            Console.Write("Digite o valor da base do retângulo:  ");
-            b = int.Parse(Console.ReadLine());
+            Console.Write("Digite o valor do seu peso:  ");
+            P = double.Parse(Console.ReadLine());
 
-            Console.Write("Digite o valor da altura do retângulo:  ");
-            h = int.Parse(Console.ReadLine());
+            Console.Write("Digite o valor da sua altura:  ");
+            A = double.Parse(Console.ReadLine());
 
-            area = b * h;
+           R = P/ Math.Pow( A, 2);
 
-            Console.Write("A area do retângulo é: ");
-            Console.WriteLine(area);
-
-
-            if (area > 100)
-                Console.WriteLine("      Terreno Grande       ");
+            Console.WriteLine(" Relação: {0}", R);
+            if (R < 20)
+                Console.WriteLine("Abaixo do Peso");
             else
-                Console.WriteLine("      Terreno Pequeno       ");
-
-
-
+                if (R <= 25)
+                Console.WriteLine("Peso ideal");
+            else
+                Console.WriteLine("Acima do Peso");
 
 
 
