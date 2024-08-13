@@ -4,32 +4,54 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LISTA2EX6
+namespace LISTA2EX7
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            double P;
-            double A;
-            double R;
+            int a;
+            int b;
+            int c;
 
-            Console.Write("Digite o valor do seu peso:  ");
-            P = double.Parse(Console.ReadLine());
+            Console.Write("Digite o valor do lado 1:  ");
+            a = int.Parse(Console.ReadLine());
 
-            Console.Write("Digite o valor da sua altura:  ");
-            A = double.Parse(Console.ReadLine());
+            Console.Write("Digite o valor do lado 2:  ");
+            b = int.Parse(Console.ReadLine());
 
-           R = P/ Math.Pow( A, 2);
+            Console.Write("Digite o valor do lado 3:  ");
+            c = int.Parse(Console.ReadLine());
 
-            Console.WriteLine(" Relação: {0}", R);
-            if (R < 20)
-                Console.WriteLine("Abaixo do Peso");
+
+
+            if (a + b > c)
+                if (a + c > b)
+                    if (b + c > a)
+                        if (a == b)
+                            if (a == c)
+                                Console.WriteLine("Equilátero");
+                            else
+                                Console.WriteLine("Isósceles");
+                        else
+                            if (b == c)
+                            Console.WriteLine("Isósceles");
+                        else
+                               if (a == c)
+                            Console.WriteLine("Isósceles");
+                        else
+                            Console.WriteLine("Escaleno");
+                    else
+                        Console.WriteLine("Não forma triâgulo");
+                else
+                    Console.WriteLine("Não forma triâgulo");
             else
-                if (R <= 25)
-                Console.WriteLine("Peso ideal");
-            else
-                Console.WriteLine("Acima do Peso");
+                Console.WriteLine("Não forma triâgulo");
+
+
+
+
+
 
 
 
