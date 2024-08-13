@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LISTA2EX4
+namespace LISTA2EX5
 {
     internal class Program
     {
@@ -28,6 +28,15 @@ namespace LISTA2EX4
 
             if (area > 100)
                 Console.WriteLine("      Terreno Grande       ");
+            else
+                Console.WriteLine("      Terreno Pequeno       ");
+
+
+
+
+
+
+
 
 
 
