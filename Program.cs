@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LISTA2EX1
+namespace LISTA2EX2
 {
     internal class Program
     {
@@ -20,19 +20,21 @@ namespace LISTA2EX1
             Console.Write("Digite o segundo valor:  ");
             b = int.Parse(Console.ReadLine());
 
-            if (a > b)
+            if (a == b)
             {
-                Console.WriteLine("Primeiro");
+                Console.WriteLine("Iguais");
             }
             else
             {
-                Console.WriteLine("Segundo");
+                if (a > b)
+                {
+                    Console.WriteLine("Primeiro");
+                }
+                else
+                {
+                    Console.WriteLine("Segundo");
+                }
             }
-
-
-
-
-
         }
     }
 }
